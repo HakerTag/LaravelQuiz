@@ -49,14 +49,14 @@ Log::useFiles(storage_path() . '/logs/laravel.log');
 App::error(function (Exception $exception, $code) {
     Log::error($exception);
 
-//    switch ($code) {
-//        case 403:
-//            return Response::view('error_pages.403', array(), 403);
-//        case 500:
-//            return Response::view('error_pages.500', array(), 500);
-//        default:
-//            return Response::view('error_pages.404', array(), 404);
-//    }
+    switch ($code) {
+        case 403:
+            return Response::view('error_pages.403', array(), 403);
+        case 500:
+            return Response::view('error_pages.500', array(), 500);
+        default:
+            return Response::view('error_pages.404', array(), 404);
+    }
 });
 
 /*
