@@ -1,0 +1,892 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    /*
+      Override the default (display: inline) for
+      browsers that do not recognize HTML5 tags.
+
+      IE8 (and lower) requires a shiv:
+      http://ejohn.org/blog/html5-shiv
+    */
+    display: block;
+}
+
+b,
+strong {
+    /*
+      Makes browsers agree.
+      IE + Opera = font-weight: bold.
+      Gecko + WebKit = font-weight: bolder.
+    */
+    font-weight: bold;
+}
+
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+    /*
+      For IE.
+      http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+    */
+    -ms-interpolation-mode: bicubic;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    /*
+      For IE6 + IE7:
+
+      "display: list-item" keeps bullets from
+      disappearing if hasLayout is triggered.
+    */
+    display: list-item;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td,
+caption {
+    font-weight: normal;
+    vertical-align: top;
+    text-align: left;
+}
+
+q {
+    quotes: none;
+}
+
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+sub,
+sup,
+small {
+    font-size: 75%;
+}
+
+sub,
+sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+svg {
+    /*
+      For IE9. Without, occasionally draws shapes
+      outside the boundaries of <svg> rectangle.
+    */
+    overflow: hidden;
+}
+
+/*
+#
+#########=main#########
+#
+*/
+
+body {
+    background-image: url("../../img/website_content.png");
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*#main-container {*/
+/*min-height: 100%;*/
+/*position: relative;*/
+/*}*/
+
+/*
+#
+#########=buttons main#########
+#
+*/
+
+.button-remove {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    overflow: hidden;
+}
+
+/*
+#
+#########=utility#########
+#
+*/
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+#empty-data{
+    margin: 5%;
+    text-align: center;
+    color: #009ccc;
+    font-size: 36px;
+    margin-bottom: 1%;
+}
+/*
+#
+#########=alerts styling#########
+#
+*/
+.alert, .alert-warning {
+    width: 50%;
+    font-size: 24px;
+    margin: 2% auto 0 auto;
+    padding: 2% 1%;
+    border-radius: 5px;
+    background-color: #f2dede;
+    color: #a43a3a;
+}
+
+.alert-success {
+    background-color: #d8edf8;
+    color: #286788;
+}
+
+.close {
+    display: none;
+}
+
+/*
+#
+#########=header#########
+#
+*/
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+}
+
+#logo a {
+    background: url(../../img/logo-blue.png) no-repeat;
+    text-indent: -9999px;
+    float: left;
+    width: 212px;
+    height: 36px;
+    margin: 13px 0 13px 240px;
+
+}
+
+#links {
+    float: right;
+    margin: 21px 240px 17px 0;
+}
+
+#links ul li a {
+    padding: 12.5px;
+    margin: 12.5px;
+    font-size: 18px;
+    color: #40adb8;
+}
+
+#drop-down {
+    border: 1px solid #0091a0;
+}
+
+#links ul li a:hover {
+    padding: 11.5px;
+    color: #0091a0;
+    border: 1px solid #0091a0;
+    border-radius: 8px;
+}
+
+#links ul:last-child:after {
+    content: "";
+}
+
+#drop-down {
+    display: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#drop-down li a {
+    display: block;
+}
+
+#links li:hover ul {
+    display: block;
+    position: absolute;
+    right: 250px;
+    top: 58px;
+    z-index: 1;
+}
+
+/*
+#
+#########=section-banner#########
+#
+*/
+#section-banner {
+    background-color: rgba(0, 145, 160, 1);
+    width: 100%;
+    height: 280px;
+    border-bottom: 2px solid #1a1a1a;
+    box-shadow: inset 0px 26px 20px -13px rgba(0, 0, 0, 0.75);
+}
+
+#section-banner h1 {
+    color: white;
+    text-align: center;
+    font-size: 86px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px #000000;
+    letter-spacing: 10px;
+    padding-top: 86px;
+    cursor: default;
+}
+
+/*
+#
+#########=section-all-exams#########
+#
+*/
+#section-all-exams {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+#section-all-exams h3 {
+    cursor: default;
+    font-size: 48px;
+    color: #00b0e6;
+    margin: 15px 240px;
+}
+
+#section-all-exams ul {
+    margin: auto;
+    width: 65%;
+}
+
+#section-all-exams ul li {
+    float: left;
+}
+
+#section-all-exams ul li div {
+    margin: 3px;
+}
+
+.questions-count,
+.finished-exam {
+    display: none;
+    color: #00b0e6;
+    font-size: 17px;
+}
+
+.finished-exam {
+    color: red;
+}
+
+.white-atr {
+    color: white;
+}
+
+.exam-name {
+    height: 60px;
+    overflow: hidden;
+}
+
+#section-all-exams ul li {
+    display: block;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 240px;
+    height: 120px;
+    text-align: center;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#section-all-exams ul li:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#section-all-exams h3:last-child {
+    display: none;
+}
+
+#section-all-exams p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+/*
+#
+#########=forms create,update#########
+#
+*/
+.section-form {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    width: 40%;
+    margin: auto;
+}
+
+.section-form label {
+    color: white;
+    display: block;
+    padding: 40px 5px 5px 2px;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.section-form input[type=text],
+.section-form select {
+    font-size: 1.4em;
+    display: block;
+    width: 100%;
+    height: 40px;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    color: black;
+}
+
+.section-form input[type="submit"] {
+    width: 30%;
+    background: #ffa31a;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin: 30px auto;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.section-form input[type="submit"]:hover {
+    background: #e68a00;
+}
+
+.button {
+    background: #e6e6e6;
+    color: black;
+    font-size: 1.4em;
+    border-radius: 7px;
+}
+
+/*
+#
+#########=marks table#########
+#
+*/
+
+#section-marks-to-user table {
+    width: 60%;
+    margin: 5% auto;
+}
+
+#section-marks-to-user thead {
+    cursor: pointer;
+    background-color: #00b0e6;
+    font-size: 24px;
+}
+
+#section-marks-to-user thead tr th {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+
+}
+
+#section-marks-to-user tbody tr {
+    font-size: 17px;
+    color: white;
+    cursor: default;
+
+}
+
+#section-marks-to-user tbody tr:nth-child(even) {
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+#section-marks-to-user tbody tr td {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+/*
+#
+#########=show all exams from the user#########
+#
+*/
+#section-show-exam {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    margin: 15px 240px;
+}
+
+#section-show-exam a {
+    color: black;
+    margin-right: 25px;
+    padding: 2px;
+}
+
+#section-show-exam h3 {
+    font-size: 48px;
+    color: #00b0e6;
+}
+
+.button-preview {
+    background: #00e600;
+    border-radius: 5px;
+}
+
+.button-preview:hover {
+    background: #009900;
+}
+
+.button-edit {
+    background: #ffa31a;
+    border-radius: 5px;
+}
+
+.button-edit:hover {
+    background: #cc7a00;
+}
+
+#section-show-exam .button-remove {
+    padding: 2px;
+    font-size: 14px;
+    color: #000000;
+    background: #FF0000;
+    border: none;
+    margin-bottom: 44px;
+}
+
+#section-show-exam .button-remove:hover {
+    background: #cc0000;
+}
+
+.button-save-question:hover {
+    background: #e68a00;
+}
+
+.button-save-question {
+    width: 30%;
+    background: #ffa31a;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin: 30px auto;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/*
+#
+#########=editing questions#########
+#
+*/
+#section-question-form {
+    width: 50%;
+}
+
+#section-question-form label {
+    color: white;
+    font-size: 22px;
+}
+
+#section-question-form input[type="text"] {
+    width: 86%;
+    height: 40px;
+    font-size: 20px;
+    margin: 2% 0;
+    float: left;
+}
+
+#section-question-form .button-remove {
+    width: 11%;
+    font-size: 18px;
+    background: #FF0000;
+    color: #ffffff;
+    margin: 2% 1%;
+    height: 43.5px;
+    float: right;
+}
+
+#section-question-form .button-remove:hover {
+    background: #cc0000;
+}
+
+.button-add-more-question:hover {
+    background: #009ccc;
+}
+
+.button-add-more-question {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    background: #00b0e6;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.button-add-more-question:hover {
+    background-color: #009ccc;
+}
+
+.exam-info {
+    padding-top: 60px;
+    font-size: 24px;
+    color: #00b0e6;
+    text-align: center;
+}
+
+.exam-atr {
+    color: white;
+    padding-right: 30px;
+}
+
+/*
+#
+#########=editing answers#########
+#
+*/
+.single-question input[type="text"] {
+    width: 76%;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.true-answer input {
+    background-color: #66ff66;
+}
+
+.false-answer input {
+    background-color: #ff4d4d;
+}
+
+.single-question h3 {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.single-question a {
+    float: left;
+}
+
+.single-question input[type="checkbox"] {
+    /*margin: 15px 20px;*/
+    margin: 1.5% 3%;
+    transform: scale(2, 2);
+    float: left;
+
+}
+
+#section-question-form,
+.single-question,
+.section-form {
+    margin: auto;
+    padding: 15px 25px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.true-or-false .button-remove {
+    background: #ff0000;
+    padding: 12px;
+    width: 8%;
+    text-align: center;
+    color: white;
+}
+
+.true-or-false .button-remove:hover {
+    background: #cc0000;
+}
+
+.button-add-new-answer:hover {
+    background-color: #009ccc;
+}
+
+.button-add-new-answer {
+    background-color: #00b0e6;
+    clear: both;
+    margin: 0 40%;
+    white-space: nowrap;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-save-all {
+    margin: 0 40%;
+}
+
+/*
+#
+#########=quiz stylesn#########
+#
+*/
+.startQuiz,
+.nextQuestion,
+.backToQuestion,
+.questions li.question,
+.questions li.question .responses,
+.questions li.question .responses .correct,
+.questions li.question .responses .incorrect,
+.quizResults {
+    display: none;
+}
+
+/* If response messages are disabled or only shown on quiz completion,
+   nextQuestion button IS checkAnswer button - so it must be displayed */
+.nextQuestion.checkAnswer {
+    display: block;
+}
+
+ol.questions,
+ul.answers,
+ul.responses,
+ol.questions li,
+ul.answers li,
+ul.responses li {
+    list-style-type: none;
+}
+
+/* Accessibility */
+.quizName span:first-child {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.nextQuestion:hover {
+    background: #ff9900;
+}
+
+.nextQuestion {
+    font-size: 1.53em;
+    height: 40px;
+    background: #ffa31a;
+    margin: 5%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#start-button {
+    border-radius: 15px;
+    background-color: #009926;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    font-size: 1.8em;
+}
+
+#start-exam-container {
+    width: 50%;
+    margin: 5% auto;
+    border-radius: 15px;
+    background-color: #00b0e6;
+}
+
+.quizArea {
+    color: white;
+}
+
+.quizArea h3 {
+    font-size: 78px;
+    text-align: center;
+}
+
+.questionCount {
+    font-size: 28px;
+    color: black;
+    padding: 2%;
+}
+
+.answers li {
+    display: block;
+    font-size: 24px;
+    margin: 1%;
+}
+
+.answers li input,
+.answers li label {
+    cursor: pointer;
+}
+
+#questionCount {
+    font-size: 230px;
+}
+
+.quizHeader {
+    display: none;
+}
+
+.quizDescription {
+    display: none;
+}
+
+.quizName {
+    margin: 2%;
+    font-size: 28px;
+    color: black;
+}
+
+.quizScore,
+.quizLevel {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.quizResultsCopy {
+    display: none;
+}

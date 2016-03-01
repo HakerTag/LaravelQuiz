@@ -1,0 +1,325 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    /*
+      Override the default (display: inline) for
+      browsers that do not recognize HTML5 tags.
+
+      IE8 (and lower) requires a shiv:
+      http://ejohn.org/blog/html5-shiv
+    */
+    display: block;
+}
+
+b,
+strong {
+    /*
+      Makes browsers agree.
+      IE + Opera = font-weight: bold.
+      Gecko + WebKit = font-weight: bolder.
+    */
+    font-weight: bold;
+}
+
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+    /*
+      For IE.
+      http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+    */
+    -ms-interpolation-mode: bicubic;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    /*
+      For IE6 + IE7:
+
+      "display: list-item" keeps bullets from
+      disappearing if hasLayout is triggered.
+    */
+    display: list-item;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td,
+caption {
+    font-weight: normal;
+    vertical-align: top;
+    text-align: left;
+}
+
+q {
+    quotes: none;
+}
+
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+sub,
+sup,
+small {
+    font-size: 75%;
+}
+
+sub,
+sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+svg {
+    /*
+      For IE9. Without, occasionally draws shapes
+      outside the boundaries of <svg> rectangle.
+    */
+    overflow: hidden;
+}
+
+/*
+#
+#########=END RESETS#########
+#
+*/
+
+body {
+    background-image: url("../../img/website_content.png");
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+input {
+    border-radius: 5px;
+}
+
+#main-container {
+    width: 30%;
+    background-color: #00b0e6;
+    color: white;
+    margin: 200px auto 100px auto;
+    box-shadow: 8px 7px 59px 7px rgba(0, 0, 0, 0.91);
+}
+
+nav #signup-button,
+nav #login-button {
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 40px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+nav #signup-button {
+    background-color: rgba(0, 145, 160, 1);
+}
+
+nav #login-button {
+    background-color: #00b0e6;
+}
+
+.form-group {
+    margin: 50px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 12px;
+    margin-left: 5%;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.form-group input[type=text],
+.form-group input[type=password] {
+    font-size: 1.4em;
+    display: block;
+    width: 90%;
+    margin: 0 5% 5% 5%;
+    height: 40px;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    color: black;
+}
+
+#signup-form input[type=submit],
+#login-form input[type=submit] {
+    font-size: 1.53em;
+    width: 90%;
+    height: 40px;
+    background: #ffa31a;
+    margin: 5%;
+}
+
+#signup-form {
+    display: none;
+}
+
+/*
+#
+#########=utility#########
+#
+*/
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+
+}
+
+/*
+#
+#########=alert styling#########
+#
+*/
+.alert, .alert-warning {
+    font-size: 24px;
+    margin: 5%;
+    padding: 7% 5%;
+    border-radius: 5px;
+    background-color: #f2dede;
+    color: #a43a3a;
+}
+
+.alert-success {
+    background-color: #d8edf8;
+    color: #286788;
+}
+.close {
+    display: none;
+}
