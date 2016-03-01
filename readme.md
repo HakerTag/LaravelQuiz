@@ -67,7 +67,7 @@ If you want to see what really happen:
 //           return Response::view('error_pages.500', array(), 500);
 //       default:
 //           return Response::view('error_pages.404', array(), 404);
-   }
+//   }
 ```
 
 ##Screenshots
