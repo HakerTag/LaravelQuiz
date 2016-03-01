@@ -70,6 +70,8 @@ If you want to see what really happen:
    }
 ```
 
+##Screenshots
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
