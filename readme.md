@@ -55,11 +55,12 @@ Seed the database if you want:
 ###5.Debugging & error log
 If you want to see what really happen:
 >in  app/config/app.php  
-```
-'debug' => true
-```
+	```
+	'debug' => true
+	```
 >in app/start/global.php comment/remove
-```   switch ($code) {
+```   
+switch ($code) {
        case 403:
            return Response::view('error_pages.403', array(), 403);
        case 500:
