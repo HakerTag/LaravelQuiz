@@ -56,17 +56,17 @@ Seed the database if you want:
 If you want to see what really happen:
 * in  app/config/app.php  
 	```
-	'debug' => true
+	'debug' => true,
 	```
 * in app/start/global.php
 ```   
-switch ($code) {
-       case 403:
-           return Response::view('error_pages.403', array(), 403);
-       case 500:
-           return Response::view('error_pages.500', array(), 500);
-       default:
-           return Response::view('error_pages.404', array(), 404);
+//switch ($code) {
+//       case 403:
+//           return Response::view('error_pages.403', array(), 403);
+//       case 500:
+//           return Response::view('error_pages.500', array(), 500);
+//       default:
+//           return Response::view('error_pages.404', array(), 404);
    }
 ```
 
