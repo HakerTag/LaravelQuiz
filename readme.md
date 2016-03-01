@@ -58,7 +58,7 @@ If you want to see what really happen:
 	```
 	'debug' => true
 	```
--in app/start/global.php comment/remove
+-in app/start/global.php
 ```   
 switch ($code) {
        case 403:
