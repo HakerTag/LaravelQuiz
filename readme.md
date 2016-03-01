@@ -54,11 +54,11 @@ Seed the database if you want:
 
 ###5.Debugging & error log
 If you want to see what really happen:
->in  app/config/app.php  
+-in  app/config/app.php  
 	```
 	'debug' => true
 	```
->in app/start/global.php comment/remove
+-in app/start/global.php comment/remove
 ```   
 switch ($code) {
        case 403:
