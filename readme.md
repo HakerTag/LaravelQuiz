@@ -46,7 +46,7 @@ Seed the database if you want:
 
     php artisan db:seed
 
-### 4. Info
+### 4. Info(for seeded database)
 
 * Admin Account: ['email' => 'admin@admin.com', 'password' => 'admin']
 * Teacher Account: ['email' => 'teacher@teacher.com', 'password' => 'teacher']
