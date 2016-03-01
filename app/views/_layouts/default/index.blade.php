@@ -14,7 +14,6 @@
    <link href="{{cdn('css/main/style.css')}}" rel="stylesheet" type="text/css">
    <script src="{{cdn('js/jquery/jquery.js')}}"></script>
    <script src="{{cdn('js/jquery.tablesorter.min.js')}}"></script>
-   <script src="{{cdn('js/ajax.js')}}"></script>
    @section('specific-page-addons')@show
 </head>
     <body>
