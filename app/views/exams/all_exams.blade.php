@@ -6,7 +6,7 @@
 
 @section('content')
     <section id="section-banner">
-       <h1>Subjects</h1>
+       <h1>All exams</h1>
     </section>
 
     @include('flash::message')
