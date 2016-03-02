@@ -74,7 +74,22 @@ If you want to see what really happen:
 
 ###Login
 ![](http://i.imgur.com/SIHnEtq.jpg) 
-
+###Home
+![](http://i.imgur.com/HIcEBBK.jpg)
+###Start Exam
+![](http://i.imgur.com/XfkIyET.jpg)
+###Complete Exam
+![](http://i.imgur.com/qlWdmTx.jpg)
+###Marks to student
+![](http://i.imgur.com/MGchQnF.png)
+###All exams made by this teacher
+![](http://i.imgur.com/owz0qT0.jpg)
+###Editing Questions
+![](http://i.imgur.com/a8WH3SS.jpg)
+###Editing Answers
+![](http://i.imgur.com/YB8lrfI.jpg)
+###Admin Panel
+![](http://i.imgur.com/4TWojVf.jpg)
 
 ## License
 
