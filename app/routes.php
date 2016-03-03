@@ -26,7 +26,8 @@ Route::get('/', [
     'uses' => 'UserController@index'
 ]);
 
-Route::pattern('id', '[0-9]+'); //also for {mark}
+Route::pattern('id', '[0-9]+');
+Route::pattern('mark', '[2-6]');
 
 Route::group(array('before' => 'auth'), function () {
 
