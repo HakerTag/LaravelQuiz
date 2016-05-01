@@ -1,0 +1,6 @@
+public function getCreatedAtAttribute($value)
+    {
+        $formatted = new Carbon($value);
+        return $formatted->diffForHumans();
+//        return $formatted->format('d/m/Y G:i:s');
+    }
