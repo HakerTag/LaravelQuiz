@@ -4,3 +4,10 @@ public function getCreatedAtAttribute($value)
         return $formatted->diffForHumans();
 //        return $formatted->format('d/m/Y G:i:s');
     }
+
+*************************************************************
+    $note = new Note;
+    $note->body =$request->body;
+    $card->notes()->save($note) // saving the specific card_id to that note
+    
+    redirect back();
