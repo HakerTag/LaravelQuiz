@@ -40,6 +40,14 @@ ADDING VALID PERIOD FOR DATE ( +3 month TILL EXPIRE for example)
 	$d=strtotime($created_at. "+3 Months");
 	echo date("Y-m-d H:i:s", $d) . "<br>";
 
+EACH MONDAY FOR 6 WEEKS
+	$startdate=strtotime("Saturday");
+	$enddate=strtotime("+6 weeks", $startdate);
+	
+	while ($startdate < $enddate) {
+	  echo date("M d", $startdate) . "<br>";
+	  $startdate = strtotime("+1 week", $startdate);
+	}
 *************************************************************
 
 	
