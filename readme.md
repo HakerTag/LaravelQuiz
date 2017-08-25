@@ -52,7 +52,7 @@ Seed the database if you want:
 * Teacher Account: ['email' => 'teacher@teacher.com', 'password' => 'teacher']
 * Student Account: ['email' => 'student@student.com', 'password' => 'student']
 
-###5.Debugging & error log
+### 5.Debugging & error log
 If you want to see what really happen:
 * in  app/config/app.php  
 	```
@@ -72,23 +72,23 @@ If you want to see what really happen:
 
 ##Screenshots
 
-###Login
+### Login
 ![](http://i.imgur.com/SIHnEtq.jpg) 
-###Home
+### Home
 ![](http://i.imgur.com/HIcEBBK.jpg)
-###Start Exam
+### Start Exam
 ![](http://i.imgur.com/XfkIyET.jpg)
-###Complete Exam
+### Complete Exam
 ![](http://i.imgur.com/qlWdmTx.jpg)
-###Marks to student
+### Marks to student
 ![](http://i.imgur.com/MGchQnF.png)
-###All exams made by this teacher
+### All exams made by this teacher
 ![](http://i.imgur.com/owz0qT0.jpg)
-###Editing Questions
+### Editing Questions
 ![](http://i.imgur.com/a8WH3SS.jpg)
-###Editing Answers
+### Editing Answers
 ![](http://i.imgur.com/YB8lrfI.jpg)
-###Admin Panel
+### Admin Panel
 ![](http://i.imgur.com/4TWojVf.jpg)
 
 ## License
